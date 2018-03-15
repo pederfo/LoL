@@ -1,0 +1,33 @@
+body{
+    background-image: url(zeus.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+}
+
+#heading{
+    text-align: center;
+}
+
+#main{
+    width: 300px;
+    margin: auto;
+}
+
+#summer{
+    width: 100px;
+    float: left;
+    height: 300px;
+}
+#winter{
+    width: 100px;
+    float: right;
+    height: 300px;
+    
+}
+
+#main{
+    text-align: center;
+}
+

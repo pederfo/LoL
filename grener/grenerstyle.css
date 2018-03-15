@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+    background: radial-gradient(grey, black);
+}
+
+
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1 {
+    margin-top: -380px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "papyrus", fantasy;
+}
+
+header p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: "papyrus", fantasy;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(hercules1_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2); /* 3d view */
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 1em 0;
+    
+}
+
+
+.grener {
+    display: flex;                       /* establish flex container */
+    flex-direction: row;                 /* default value; can be omitted */
+    flex-wrap: nowrap;                   /* default value; can be omitted */
+    justify-content: space-between;      /* switched from default (flex-start) */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+.grener > .rad {
+    width: 200px;
+    padding: 10px;
+
+}
+
+}
+
+.grener:after {
+    clear: both;
+}
+
+/*
+@media screen and (max-width: 600px) {
+    .grener {
+        width: 100%;
+    }
+}
+*/
+
+/* MODAL */
+
+.button {
+    font-family: "papyrus", fantasy;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background: none;
+    transition: transform .2s; /* Animation */
+
+}
+
+
+
+.button:hover {
+    transform: scale(1.2); /* zoom */
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5)
+}
+
+.modal_content {
+    background-image: url(modal_background5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgb(0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    font-family: "papyrus", fantasy;
+}
+
+.modal_content p {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+.fakta {
+    font-size: 12px;
+    padding: 30px;
+}
+
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+
+
+
+/* NAV */
+
+#nav {
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 0.2em;
+}
+
+
+li {
+    display: inline-block;
+    margin: 10px 50px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition: transform .2s; /* Animation */
+    font-family: "papyrus", fantasy;
+    
+}
+
+a:hover {
+    transform: scale(1.5); /* zoom */
+}
+
+
+
+
+
+
+
+
